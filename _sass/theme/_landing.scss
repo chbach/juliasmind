@@ -1,0 +1,50 @@
+.header {
+	min-height: 100%;
+	border-bottom: 0.5*$base-spacing-unit solid $base-brand-color;
+	box-sizing: border-box;
+	position: relative;
+}
+
+.header__title {
+	color: #fff;
+	font-size: 6*$base-font-size;
+	line-height: 8*$base-font-size;
+	position: absolute;
+	bottom: 2*$base-spacing-unit;
+	left: 2*$base-spacing-unit;
+	margin: 0;
+	max-width: 2em;
+}
+
+.header__video {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+
+@include grid-media-query("portable") {
+	.header__title {
+		max-width: none;
+		width: 100%;
+		text-align: center;
+		left: 0;
+		bottom: $base-spacing-unit;
+		font-size: 4*$base-font-size;
+	}
+
+    .header__video {
+        display: none;
+    }
+
+    .header {
+        background: #1c1c1c url(../assets/img/gjuice.jpg) no-repeat center top;
+        background-size: cover;
+    }
+}

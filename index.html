@@ -1,0 +1,142 @@
+---
+layout: default
+title: Groove Juice – Coverband 100% live Pop, Rock, Soul aus Paderborn und Höxter
+---
+
+<nav class="dark-bg main-nav cf" data-scroll-header data-gumshoe-header>
+    <div class="centered">
+        <h1 class="main-nav__title"><a href="/">Groove Juice</a></h1>
+        <ul class="nav nav--horizontal main-nav__links" data-gumshoe>
+            <li><a data-scroll href="#ueber">Über</a></li>
+            <li><a data-scroll href="#gigs">Termine</a></li>
+            <li><a data-scroll href="#media">Media</a></li>
+            <li><a data-scroll href="#buchen">Buchen</a></li>
+        </ul>
+    </div>
+</nav>
+<header class="header">
+    <h1 class="header__title">Groove Juice</h1>
+    <img src="assets/img/gjuice.jpg" alt="the band" style="display: none" />
+    <video class="header__video" loop="true" preload="none" id="video">
+        <source src="assets/img/video.mp4" type="video/mp4" media="all and (min-width:768px)">
+    </video>
+</header>
+<div class="dark-bg">
+    <section class="section section--teaser" id="ueber">
+        <div class="centered">
+            <div class="grid">
+                <div class="grid__item one-whole">
+                    <h2 class="h2--lead">100% live – Pop, Rock, Funk und Soul für Ihre Firmenfeier, Party oder Ihr Stadtfest!</h2>
+                    <p class="align--center">
+                    Stellen Sie sich vor, Chuck Berry schnappt sich eine Gitarre, den Bassisten von Kool & the Gang und spielt einen Song von Bruno Mars. Von Bill Withers über AC/DC bis Katy Perry ist alles dabei, was das Musikerherz erfreut und die Stimmung nach oben treibt.
+                    </p>
+
+                    <p class="sans align--center"><a href="https://www.facebook.com/groove.juice.band"><span class="icon">&#62221;</span>Besuch uns auf Facebook</a></p>
+
+                    <p class="align--center">
+                        <a href="mailto:post@groove-juice.de" class="button button--primary">Unverbindlich anfragen</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="section section--about">
+        <div class="centered">
+            <div class="grid musicians">
+                <div class="grid__item one-whole">
+                    <h2 class="section__heading">Musiker</h2>
+                </div>
+
+            {% for m in site.musicians %}
+                <div class="grid__item portable--one-whole one-quarter musicians__item">
+                    <img src="/musicians/{{ m.image }}" class="musicians__img" alt="{{ m.name }}">
+                    <strong class="musicians__name">{{ m.name }}</strong>
+                    <span class="musisicans__instrument">{{ m.instrument }}</span>
+                </div>
+            {% endfor %}
+
+            </div>
+        </div>
+    </section>
+
+    <section class="section section--termine" id="gigs">
+        <div class="centered">
+            <div class="grid termine">
+                <div class="grid__item one-whole">
+                    <h2 class="section__heading">Termine</h2>
+                </div>
+                {% for t in site.data.termine %}
+                <div class="grid__item one-third portable--one-whole termine__item">
+                    <strong class="termine__date">{{ t.date }}</strong><br>
+                    <span class="termine__location">{{ t.location }}</span>
+                    <span class="termine__info">{{ t.fest }}</span>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+
+
+    <section class="section section--media" id="media">
+        <div class="centered">
+            <h2 class="align--center">Media</h2>
+            <div class="grid">
+                <div class="grid__item one-half portable--one-whole">
+                    <div class="gallery">
+                    {% for myimage in site.static_files %}
+                        {% assign urlArray = myimage.path | split: '/' %}
+
+                        {% if myimage.path contains 'images' %}
+                        <a href="{{ myimage.path }}" class="gallery__item">
+                            <span style="background-image: url({{ urlArray.last | prepend: '/assets/img/thumbs/' }}" class="gallery__img">
+                            </span>
+                        </a>
+                        {% endif %}
+                    {% endfor %}
+                    </div>
+                </div>
+                <div class="grid__item one-half portable--one-whole">
+                    <iframe width="100%" height="315" style="max-width: 100%" src="https://www.youtube-nocookie.com/embed/_muRcHBftVM?rel=0" frameborder="0" allowfullscreen class="landmark"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section--press" id="buchen">
+        <div class="centered">
+            <div class="grid">
+                <div class="grid__item one-whole">
+                    <h2 class="section__heading">Buchen</h2>
+                </div>
+
+                <div class="grid__item one-third portable--one-whole">
+                    <h3>Kontakt</h3>
+                    <p><strong>Tobias Koehn</strong><br>
+                    Telefon: 0157 3252 0000<p>
+                    <p><strong>E-Mail</strong><br>
+                    <a href="mailto:post@groove-juice.de">post@groove-juice.de</a>
+                    </p>
+                    <p class="sans"><a href="https://www.facebook.com/groove.juice.band"><i class="fab fa-facebook-square"></i> Facebook</a></p>
+                </div>
+                <div class="grid__item two-thirds portable--one-whole">
+                    <h3>Electronic-Press-Kit (EPK)</h3>
+                    <p>Hier können Sie unser EPK mit Bildern und Logo-Dateien herunterladen.</p>
+                    <p><a href="epk.zip">EPK Herunterladen</a></p>
+
+                    <h3>Technical Rider</h3>
+                    <p>Für einen Überblick über unsere technischen Anforderungen und einen Beispiel-Aufbauplan können Sie unseren Technical Rider herunterladen.</p>
+                    <a href="technical-rider.pdf">Technical Rider Herunterladen</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="centered">
+            Impressum: Christoph Bach, Haustenbecker Straße 3, 32805 Horn-Bad Meinberg
+        </div>
+    </footer>
+</div>
+

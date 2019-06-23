@@ -1,0 +1,67 @@
+h1 {
+	font-family: 'Poiret One', cursive;
+	font-size: 3*$base-font-size;
+	text-transform: uppercase;
+	font-weight: normal;
+}
+
+h2 {
+	font-size: 1.75*$base-font-size;
+	font-weight: normal;
+	font-style: italic;
+	text-align: center;
+	color: #fff;
+}
+
+.h2--lead {
+	font-size: 2.5*$base-font-size;
+	margin-bottom: 3*$base-spacing-unit;
+}
+
+h3 {
+	font-family: 'Poiret One', cursive;
+	font-size:1.25*$base-font-size;
+	text-transform: uppercase;
+	font-weight: normal;
+	color: lighten(#292b36, 20%);
+}
+
+strong {
+		font-family: 'Poiret One', cursive;
+		color: #fff;
+		font-size:1.25*$base-font-size;
+		font-weight: normal;
+		font-style: normal;
+}
+
+.glossary {
+	margin-left: 0;
+	list-style: none;
+	font-style: italic;
+
+	strong{
+		margin-right: 4px;
+	}
+}
+
+.glossary__extended {
+	color: $base-brand-color;
+	@extend strong;
+	font-style: normal;
+}
+
+.glossary__info {
+	display: block;
+	font-style: normal;
+	font-size: 0.85*$base-font-size;
+	font-family: $base-font-family;
+	color: $base-font-size;
+}
+
+.align--right {
+	text-align: right;
+}
+
+.cursive {
+	font-family: 'Poiret One', cursive;
+}

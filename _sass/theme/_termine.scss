@@ -1,0 +1,8 @@
+.termine__item {
+    @extend .islet;
+}
+
+.termine__location {
+    font-style: italic;
+    display: block;
+}

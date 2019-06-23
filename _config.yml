@@ -1,0 +1,17 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+title: Julia’s Mind – Big and epic indie pop rock
+keywords: "band, indie pop, rock, florence, aurora, artist, paderborn, germany, popnrw, nrw "
+description: > # this means to ignore newlines until "baseurl:"
+  Julia’s Mind play big, epic indie pop rock à la Florence + the Machine or AURORA with a similarly wonderful tendency towards drama. Carried by Julia’s virtuoso soprano, her band creates a dense, atmospheric repertoire around her sophisticated pop melodies.
+
+# Build settings
+markdown: kramdown
+sass:
+    style: compressed

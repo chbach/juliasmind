@@ -1,0 +1,57 @@
+---
+---
+/* Set Custom Variables here
+ * ====================================================
+*/
+$base-font-size:    16px!default;
+$base-line-height:  24px!default;
+$base-spacing-unit: $base-line-height!default;
+$line-height-ratio: $base-line-height / $base-font-size;
+$base-page-width: 960px!default;
+
+$breakpoints: (
+	'palm' '(max-width: 480px)',
+	'lap' '(min-width: 481px) and (max-width: 767px)',
+	'portable' '(max-width: 767px)',
+	'desk' '(min-width: 768px)'
+);
+
+$base-font-family: 'Raleway', sans-serif;
+
+$base-brand-color: #56DBD6;
+$dark-brand-color: #292b36;
+$base-font-color: lighten($dark-brand-color, 60%);
+$base-ui-color: #555;
+$base-ui-radius: 4px;
+$push: true;
+$use-markup-fix: false;
+
+
+$base-font-size:    18px;
+$base-line-height:  27px;
+
+
+/* Load Frameworks
+ * ====================================================
+*/
+@import "vendor/csswizardry-grids";
+@import "vendor/baguetteBox";
+@import "generic/responsive-helpers";
+
+/* Load partials
+ * ====================================================
+*/
+@import "generic/normalize";
+@import "generic/reset";
+@import "generic/shared";
+@import "generic/global";
+@import "generic/buttons";
+@import "generic/nav";
+
+@import "theme/typography";
+@import "theme/layout";
+@import "theme/landing";
+@import "theme/about";
+@import "theme/termine";
+@import "theme/gallery";
+

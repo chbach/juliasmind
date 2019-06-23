@@ -1,0 +1,22 @@
+.section--about {
+
+}
+
+
+.musicians__item {
+    @extend .islet;
+}
+
+.musicians__img {
+    max-width: 100%;
+    width: 100%;
+    box-shadow: 0 5px 50px transparentize(#000, .65);
+}
+
+.musicians__name {
+    display: block;
+}
+
+.musicians__instrument {
+    font-style: italic;
+}

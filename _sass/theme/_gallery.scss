@@ -1,0 +1,18 @@
+.gallery {
+    @extend .grid;
+}
+
+.gallery__item {
+    @extend .grid__item;
+    @extend .one-half;
+    @extend .portable--one-whole;
+    @extend .islet;
+}
+
+.gallery__img {
+    background-size: cover;
+    background-position: center top;
+    height: 204px;
+    display: block;
+    box-shadow: 0 5px 50px transparentize(#000, .65);
+}
