@@ -7,35 +7,50 @@ h1 {
 
 h2 {
 	font-size: 1.75*$base-font-size;
-	font-weight: normal;
-	font-style: italic;
-	text-align: center;
+	font-weight: bold;
 	color: #fff;
 }
 
 .h2--lead {
+	@extend .cursive;
+	color: $base-brand-color;
 	font-size: 2.5*$base-font-size;
 	margin-bottom: 2*$base-spacing-unit;
+	text-align: center;
+	font-weight: normal;
 }
 
 h3 {
+	@extend .muted;
 	font-family: 'Poiret One', cursive;
 	font-size:1.25*$base-font-size;
-	text-transform: uppercase;
 	font-weight: normal;
-	color: lighten(#292b36, 20%);
+	margin: 0;
+}
+
+.indent {
+	padding-left: 1.25*$base-spacing-unit;
+}
+
+.indent--small {
+	padding-left: 0.25*$base-spacing-unit;
+}
+
+.muted {
+	color: lighten($secondary-brand-color, 67%);
 }
 
 strong {
-		font-family: 'Poiret One', cursive;
-		color: #fff;
-		font-size:1.25*$base-font-size;
-		font-weight: normal;
-		font-style: normal;
+		@extend h3;
 }
 
 .lead {
 	font-size: 1.25 * $base-font-size;
+}
+
+.list-style-none {
+	margin-left: 0;
+	list-style: none;
 }
 
 .glossary {

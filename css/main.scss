@@ -11,9 +11,9 @@ $base-page-width: 960px!default;
 
 $breakpoints: (
 	'palm' '(max-width: 480px)',
-	'lap' '(min-width: 481px) and (max-width: 767px)',
-	'portable' '(max-width: 767px)',
-	'desk' '(min-width: 768px)'
+	'lap' '(min-width: 481px) and (max-width: 825px)',
+	'portable' '(max-width: 825px)',
+	'desk' '(min-width: 826px)'
 );
 
 $base-font-family: 'Raleway', sans-serif;
