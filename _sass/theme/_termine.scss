@@ -2,7 +2,15 @@
     @extend .islet;
 }
 
+.termine__date {
+	font-weight: bold;
+	font-family: $base-font-family;
+	font-size: $base-font-size;
+}
+
 .termine__location {
-    font-style: italic;
+	@extend .islet;
+    @extend .cursive;
+    font-size: 1.5*$base-font-size;
     display: block;
 }

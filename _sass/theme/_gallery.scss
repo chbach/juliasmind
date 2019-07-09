@@ -1,18 +1,30 @@
 .gallery {
     @extend .grid;
+    padding-left: 3*$base-spacing-unit;
 }
 
 .gallery__item {
     @extend .grid__item;
-    @extend .one-half;
-    @extend .portable--one-whole;
     @extend .islet;
 }
 
 .gallery__img {
     background-size: cover;
     background-position: center top;
-    height: 204px;
+    height: 0;
+    padding-top: 100%;
     display: block;
     box-shadow: 0 5px 50px transparentize(#000, .65);
+
+    &.portrait {
+        padding-top: 150%;
+    }
+}
+
+
+
+@include grid-media-query("portable") {
+    .gallery {
+        padding-left: 0;
+    }
 }

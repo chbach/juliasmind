@@ -18,10 +18,11 @@ $breakpoints: (
 
 $base-font-family: 'Raleway', sans-serif;
 
-$base-brand-color: #56DBD6;
-$dark-brand-color: #292b36;
-$base-font-color: lighten($dark-brand-color, 60%);
-$base-ui-color: #555;
+$base-brand-color: #DEC58A;
+$secondary-brand-color: #083549;
+$dark-brand-color: darken($secondary-brand-color, 5%);
+$base-font-color: #fff;
+$base-ui-color: #124053;
 $base-ui-radius: 4px;
 $push: true;
 $use-markup-fix: false;
