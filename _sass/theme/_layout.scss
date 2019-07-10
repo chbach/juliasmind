@@ -3,8 +3,10 @@ html {
   background: $dark-brand-color url(/assets/img/bg.jpg) no-repeat center center fixed;
   background-size: cover;
 }
+
 body {
     padding-top: 3*$base-spacing-unit;
+    background-color: transparentize($secondary-brand-color, 0.5);
 }
 
 
