@@ -1,7 +1,7 @@
 .header {
 	box-sizing: border-box;
 	position: relative;
-	padding: 6*$base-spacing-unit 0 10*$base-spacing-unit;
+	padding: 8*$base-spacing-unit 0 10*$base-spacing-unit;
 }
 
 .header__title {
@@ -32,14 +32,38 @@
 }
 
 
+.social-media-links {
+	list-style: none;
+	text-align: center; 
+	font-size: 1.5*$base-font-size;
+	margin: 0;
+	margin-top: -6*$base-spacing-unit;
+	margin-bottom: 3*$base-spacing-unit;
+
+	li {
+		display: inline-block;
+
+		a {
+			padding: 10px;
+			color: #fff;
+		}
+	}
+}
+
+
 @include grid-media-query("portable") {
 	.header {
 		text-align: center;
-		padding: 4*$base-spacing-unit 0 6*$base-spacing-unit;
+		padding: 8*$base-spacing-unit 0 6*$base-spacing-unit;
+
+		.lead, p {
+			text-align: center !important;
+		}
 	}
 
 	.header__title { 
 		font-size: 2.5*$base-font-size;
+		text-align: center;
 	}
 	
 	.header__img {
