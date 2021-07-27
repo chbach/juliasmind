@@ -75,7 +75,7 @@ Der Aufruf von Scriptbibliotheken oder Schriftbibliotheken löst automatisch ein
 
 Die Datenschutzrichtlinie des Bibliothekbetreibers Google finden Sie hier: <https://www.google.com/policies/privacy/>
 
-## Verwendung von Google 
+## Verwendung von Google
 
 **Eingebettete YouTube-Videos**
 
@@ -98,6 +98,8 @@ Wir haben keinen Einfluss darauf, welche Daten ein aktiviertes Plugin erfasst un
 Wir haben auf unserer Website die Social-Media-Buttons folgender Unternehmen eingebunden:
 
 * Spotify
+* Bandcamp
+* Apple Music
 
 ## Google AdWords
 

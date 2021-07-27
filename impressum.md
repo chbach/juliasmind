@@ -7,9 +7,9 @@ title: Impressum
 
 Angaben gemäß § 5 TMG
 
-Christoph Bach   
-Paulinenstraße 9   
-33098 Paderborn
+Christoph Bach<br>
+Hermannstr. 24<br>
+33102 Paderborn
 
 <juliasmind@gmx.de>
 
