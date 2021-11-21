@@ -1,0 +1,35 @@
+backend:
+  name: git-gateway
+  branch: master # Branch to update (optional; defaults to master)
+media_folder: "assets/img/uploads" # Media files will be stored in the repo under static/images/uploads
+public_folder: "assets/img/uploads" # The src attribute for uploaded media will begin with /images/uploads
+collections:
+  - name: 'releases'
+    label: 'Releases'
+    folder: '_releases/'
+    create: true
+    editor:
+      preview: false
+    fields:
+      - { label: 'Name', name: 'name', widget: 'string' }
+      - { label: 'Cover', name: 'cover', widget: 'image' }
+      - { label: 'Beschreibung', name: 'body', widget: 'markdown' }
+  - name: 'pages'
+    label: 'Pages'
+    editor:
+      preview: false
+    files:
+      - label: 'Impressum'
+        name: 'impressum'
+        file: 'impressum.md'
+        fields:
+          - { label: 'Titel', name: 'title', widget: 'hidden', default: 'default' }
+          - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'default' }
+          - { label: 'Body', name: 'body', widget: 'markdown' }
+      - label: 'Datenschutz'
+        name: 'datenschutz'
+        file: 'datenschutz.md'
+        fields:
+          - { label: 'Titel', name: 'title', widget: 'hidden', default: 'default' }
+          - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'default' }
+          - { label: 'Body', name: 'body', widget: 'markdown' }
