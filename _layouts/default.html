@@ -11,6 +11,7 @@
 		<link href="//fonts.googleapis.com/css?family=Poiret+One|Raleway:400,400i,700&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
 		<script src="https://kit.fontawesome.com/cbba91e3d0.js"></script>
+		<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 	</head>
 	<body>
 	{{ content }}
@@ -63,6 +64,17 @@
         callback: function (nav) {} // Callback to run after setting active link
     });
 
+	</script>
+	<script>
+	  if (window.netlifyIdentity) {
+	    window.netlifyIdentity.on("init", user => {
+	      if (!user) {
+	        window.netlifyIdentity.on("login", () => {
+	          document.location.href = "/admin/";
+	        });
+	      }
+	    });
+	  }
 	</script>
 	</body>
 </html>
