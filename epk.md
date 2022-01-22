@@ -1,8 +1,8 @@
 ---
-layout: epk
 title: Julia’s Mind – Indie Pop – EPK
+layout: epk
 headline: EPK Headline
-lead: EPK Leadtext
+lead: EPK Leadtext insert fancy words here
 titleImageUrl: assets/img/uploads/cover.jpg
 aboutHeading: Big, epic indie pop rock
 aboutLead: Julia’s Mind play big, epic indie pop rock à la Florence + the
