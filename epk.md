@@ -1,4 +1,5 @@
 ---
+layout: epk
 title: Julia’s Mind – Indie Pop – EPK
 headline: EPK Headline
 lead: EPK Leadtext
