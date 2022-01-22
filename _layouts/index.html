@@ -64,10 +64,10 @@ layout: default
   <div class="centered">
       <div class="grid">
           <div class="grid__item one-whole">
-              <h2 class="h2--lead">{% page.aboutHeading %></h2>
+              <h2 class="h2--lead">{{ page.aboutHeading }}</h2>
               <hr>
               <p class="lead">
-                  {% page.aboutLead %}
+                  {{ page.aboutLead }}
               </p>
           </div>
       </div>
@@ -75,8 +75,8 @@ layout: default
           <div class="grid__item two-fifths portable--one-whole">
               <div class="gallery">
                   {% for image in site.data.index_images %}
-                  <a href="{% image.url %}" class="gallery__item">
-                      <span style="background-image: {% image.url %})" class="gallery__img"></span>
+                  <a href="{{ image.url }}" class="gallery__item">
+                      <span style="background-image: {{ image.url }})" class="gallery__img"></span>
                   </a>
                   {% endfor %}
               </div>
