@@ -1,11 +1,15 @@
 ---
-layout: index
 title: Julia’s Mind – Indie Pop – New Music 2022
+layout: index
 headline: NEW MUSIC OUT NOW!
-lead: 03/09/2021 · Listen to our new single <a href="https://open.spotify.com/track/3gXX09LFjliYPTEeAyOnR5?si=73db4bdd21714d11" target="_blank">on Spotify</a>.
+lead: 03/09/2021 · Listen to our new single [on
+  Spotify](https://open.spotify.com/track/3gXX09LFjliYPTEeAyOnR5?si=73db4bdd21714d11).
 titleImageUrl: /assets/img/cover.jpg
 aboutHeading: Big, epic indie pop rock
-aboutLead: Julia’s Mind play big, epic indie pop rock à la Florence + the Machine or King Princess with a similarly wonderful tendency towards drama and dance. Carried by Julia’s virtuoso soprano, her band creates a dense, atmospheric repertoire around her sophisticated pop melodies.
+aboutLead: Julia’s Mind play big, epic indie pop rock à la Florence + the
+  Machine or King Princess with a similarly wonderful tendency towards drama and
+  dance. Carried by Julia’s virtuoso soprano, her band creates a dense,
+  atmospheric repertoire around her sophisticated pop melodies.
 ---
 
 The arrangements on their debut EP ‘Sail’, which was released in July 2019, are not only accompanied by the three-piece band but also enriched with romantic strings, unusual, unique background vocals and a few well-chosen electronic elements. In addition, rhythmic delay guitars that remind of U2 gleam through, which, together with bass, piano and drums, create a soft and heavenly space in which Julia's classically trained vocals are able to unfold to their fullest. The melodies immediately get under your skin and stick in your mind. Julia’s Mind takes you on a dreamily musical journey as their music has something especially floating, epic and emotional about itself, which immediately picks up fans of Florence + the Machine, AURORA or King Princess.</p>
