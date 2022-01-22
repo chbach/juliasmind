@@ -74,7 +74,7 @@ layout: default
       <div class="grid grid--rev">
           <div class="grid__item two-fifths portable--one-whole">
               <div class="gallery">
-                  {% for image in site.data.index_images %}
+                  {% for image in site.data.index_images.items %}
                   <a href="{{ image.url }}" class="gallery__item">
                       <span style="background-image: {{ image.url }})" class="gallery__img"></span>
                   </a>
