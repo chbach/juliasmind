@@ -77,6 +77,9 @@ collections:
           - { label: 'About Heading', name: 'aboutHeading', widget: 'text' }
           - { label: 'About Lead', name: 'aboutLead', widget: 'text' }
           - { label: 'About Text', name: 'body', widget: 'markdown' }
+          - { label: 'Music', name: 'musicContent', widget: 'markdown' }
+          - { label: 'Facts', name: 'facts', widget: 'markdown' }
+          - { label: 'Concerts', name: 'concerts', widget: 'markdown' }
       - label: 'EPK Images'
         name: 'epk_images'
         file: '_data/epk_images.yml'
@@ -86,3 +89,34 @@ collections:
             widget: 'list'
             fields:
               - { label: 'Image', name: 'url', widget: 'image' }
+      - label: 'EPK Videos'
+        name: 'epk_videos'
+        file: '_data/epk_videos.yml'
+        fields:
+          - label: 'EPK Video Items'
+            name: 'items'
+            widget: 'list'
+            fields:
+              - { label: 'Url', name: 'url', widget: 'string' }
+      - label: 'Discography'
+        name: 'discography'
+        file: '_data/discography.yml'
+        fields:
+          - label: 'Discography Items'
+            name: 'items'
+            widget: 'list'
+            fields:
+              - { label: 'Content', name: 'content', widget: 'markdown' }
+              - { label: 'Image', name: 'image', widget: 'image' }
+      - label: 'EPK Links'
+        name: 'epk_links'
+        file: '_data/epk_links.yml'
+        fields:
+          - label: 'EPK Social Link Items'
+            name: 'items'
+            widget: 'list'
+            fields:
+              - { label: 'Title', name: 'title', widget: 'string' }
+              - { label: 'Url', name: 'url', widget: 'string' }
+              - { label: 'Icon', name: 'icon', widget: 'string' }
+
