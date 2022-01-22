@@ -4,10 +4,8 @@ backend:
 media_folder: "assets/img/uploads" # Media files will be stored in the repo under static/images/uploads
 public_folder: "assets/img/uploads" # The src attribute for uploaded media will begin with /images/uploads
 collections:
-  - name: 'pages'
-    label: 'Pages'
-    editor:
-      preview: true
+  - name: 'homepage'
+    label: 'Homepage'
     files:
       - label: 'Homepage'
         name: 'index'
@@ -39,6 +37,9 @@ collections:
             widget: 'list'
             fields:
               - { label: 'Url', name: 'url', widget: 'string' }
+  - name: 'pages'
+    label: 'Pages'
+    files:
       - label: 'Impressum'
         name: 'impressum'
         file: 'impressum.md'
@@ -57,9 +58,31 @@ collections:
     label: 'Releases'
     folder: '_releases/'
     create: true
-    editor:
-      preview: true
     fields:
       - { label: 'Name', name: 'name', widget: 'string' }
       - { label: 'Cover', name: 'cover', widget: 'image' }
-      - { label: 'Beschreibung', name: 'body', widget: 'markdown' }
+      - { label: 'Text', name: 'body', widget: 'markdown' }
+  - name: 'epk'
+    label: 'EPK'
+    files:
+      - label: 'EPK'
+        name: 'epk'
+        file: 'epk.md'
+        fields:
+          - { label: 'Title', name: 'title', widget: 'text' }
+          - { label: 'Layout', name: 'layout', widget: 'hidden'}
+          - { label: 'Headline', name: 'headline', widget: 'text' }
+          - { label: 'Lead Text', name: 'lead', widget: 'markdown' }
+          - { label: 'Lead Image', name: 'titleImageUrl', widget: 'image' }
+          - { label: 'About Heading', name: 'aboutHeading', widget: 'text' }
+          - { label: 'About Lead', name: 'aboutLead', widget: 'text' }
+          - { label: 'About Text', name: 'body', widget: 'markdown' }
+      - label: 'EPK Images'
+        name: 'epk_images'
+        file: '_data/epk_images.yml'
+        fields:
+          - label: 'Image Items'
+            name: 'items'
+            widget: 'list'
+            fields:
+              - { label: 'Image', name: 'url', widget: 'image' }

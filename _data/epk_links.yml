@@ -1,0 +1,7 @@
+items:
+  - url: https://www.facebook.com/juliasmindband
+    title: Facebook
+    icon: fa-facebook-square
+  - url: https://www.instagram.com/juliasmind
+    title: Instagram
+    icon: fa-instagram
