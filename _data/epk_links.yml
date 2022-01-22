@@ -5,3 +5,6 @@ items:
   - url: https://www.instagram.com/juliasmind
     title: Instagram
     icon: fa-instagram
+  - title: Spotify
+    url: https://open.spotify.com/artist/0Ejp7Zvkb4vLHZEJZdXlIT?si=QHlIxpxDTvWQMgZ0vKZX1A
+    icon: fa-spotify
