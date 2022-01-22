@@ -15,7 +15,7 @@ musicContent: >-
 
 
 
-  <iframe style=\"border: 0; width: 100%; max-width:470px; height: 460px;\" src=\"https://bandcamp.com/EmbeddedPlayer/album=4265494785/size=large/bgcol=ffffff/linkcol=0687f5/minimal=true/transparent=true/\" seamless=\"\"><a href=\"https://juliasmind.bandcamp.com/album/sail-ep\">Sail - EP by Julia&#39;s Mind</a></iframe>
+  <iframe style="border: 0; width: 100%; max-width:470px; height: 460px;" src="https://bandcamp.com/EmbeddedPlayer/album=4265494785/size=large/bgcol=ffffff/linkcol=0687f5/minimal=true/transparent=true/" seamless=""><a href="https://juliasmind.bandcamp.com/album/sail-ep">Sail - EP by Julia&#39;s Mind</a></iframe>
 facts: Facts text
 concerts: Concerts text
 ---
