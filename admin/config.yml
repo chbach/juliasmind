@@ -4,30 +4,11 @@ backend:
 media_folder: "assets/img/uploads" # Media files will be stored in the repo under static/images/uploads
 public_folder: "assets/img/uploads" # The src attribute for uploaded media will begin with /images/uploads
 collections:
-  - name: 'releases'
-    label: 'Releases'
-    folder: '_releases/'
-    create: true
-    editor:
-      preview: false
-    fields:
-      - { label: 'Name', name: 'name', widget: 'string' }
-      - { label: 'Cover', name: 'cover', widget: 'image' }
-      - { label: 'Beschreibung', name: 'body', widget: 'markdown' }
   - name: 'pages'
     label: 'Pages'
     editor:
-      preview: false
+      preview: true
     files:
-      - label: 'Index Images'
-        name: 'index_images'
-        file: '_data/index_images.yml'
-        fields:
-          - label: 'Image Items'
-            name: 'items'
-            widget: 'list'
-            fields:
-              - { label: 'Image', name: 'url', widget: 'image' }
       - label: 'Homepage'
         name: 'index'
         file: 'index.md'
@@ -40,6 +21,24 @@ collections:
           - { label: 'About Heading', name: 'aboutHeading', widget: 'text' }
           - { label: 'About Lead', name: 'aboutLead', widget: 'text' }
           - { label: 'About Text', name: 'body', widget: 'markdown' }
+      - label: 'Index Images'
+        name: 'index_images'
+        file: '_data/index_images.yml'
+        fields:
+          - label: 'Image Items'
+            name: 'items'
+            widget: 'list'
+            fields:
+              - { label: 'Image', name: 'url', widget: 'image' }
+      - label: 'Youtube Videos'
+        name: 'youtube_videos'
+        file: '_data/youtube_videos.yml'
+        fields:
+          - label: 'YT Video Items'
+            name: 'items'
+            widget: 'list'
+            fields:
+              - { label: 'Url', name: 'url', widget: 'string' }
       - label: 'Impressum'
         name: 'impressum'
         file: 'impressum.md'
@@ -54,3 +53,13 @@ collections:
           - { label: 'Title', name: 'title', widget: 'hidden'}
           - { label: 'Layout', name: 'layout', widget: 'hidden'}
           - { label: 'Body', name: 'body', widget: 'markdown' }
+  - name: 'releases'
+    label: 'Releases'
+    folder: '_releases/'
+    create: true
+    editor:
+      preview: true
+    fields:
+      - { label: 'Name', name: 'name', widget: 'string' }
+      - { label: 'Cover', name: 'cover', widget: 'image' }
+      - { label: 'Beschreibung', name: 'body', widget: 'markdown' }

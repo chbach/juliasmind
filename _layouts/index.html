@@ -47,7 +47,7 @@ layout: default
           </div><!--
           --><div class="grid__item one-half portable--one-whole">
               <h1 class="header__title">{{ page.headline }}</h1>
-              <p class="lead landmark">{{ page.lead }}</p>
+              <div class="lead">{{ page.lead | markdownify }}</div>
               <p>
                   <iframe src="https://open.spotify.com/follow/1/?uri=spotify:artist:0Ejp7Zvkb4vLHZEJZdXlIT&size=detail&theme=dark" width="220" height="56" scrolling="no" frameborder="0" style="border:none; overflow:hidden;" allowtransparency="true"></iframe>
               </p>
@@ -76,7 +76,7 @@ layout: default
               <div class="gallery">
                   {% for image in site.data.index_images.items %}
                   <a href="{{ image.url }}" class="gallery__item">
-                      <span style="background-image: {{ image.url }})" class="gallery__img"></span>
+                      <span style="background-image: url({{ image.url }})" class="gallery__img"></span>
                   </a>
                   {% endfor %}
               </div>
@@ -87,3 +87,78 @@ layout: default
       </div>
   </div>
 </section>
+
+<section class="section" id="music">
+  <div class="centered">
+      <div class="grid">
+        <div class="grid__item one-whole">
+            <h2 class="section__heading">Music</h2>
+        </div>
+
+        {% for release in site.releases %}
+        <div class="grid__item one-half portable--one-whole landmark">
+              <iframe style="border: 0; width: 100%; max-width:470px; height: 460px;" src="{{ release.embedUrl }}" width="100%" height="380" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+          </div>
+          <div class="grid__item one-half portable--one-whole">
+              <h2 class="indent">{{ release.title }}</h2>
+              <div class="release-content">{{ release.content | markdownify }}</div>
+          </div>
+          <hr>
+        {% endfor %}
+
+        <div class="grid__item one-whole">
+          <h2 class="section__heading">Music Videos</h2>
+        </div>
+        {% for item in site.data.youtube_videos.items %}
+        <div class="grid__item one-half portable--one-whole">
+          <iframe width="100%" height="270" src="{{ item.url }}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        {% endfor %}
+      </div>
+  </div>
+</section>
+
+
+<section class="section section--termine dark-bg" id="live">
+  <div class="centered">
+      <a href="https://www.songkick.com/artists/9989159" class="songkick-widget" data-theme="dark" data-detect-style="true" data-background-color="transparent" data-locale="en">Julia’s Mind Live</a>
+      <script src="//widget.songkick.com/9989159/widget.js"></script>
+  </div>
+</section>
+
+<section class="section section--press" id="contact">
+  <div class="centered">
+      <div class="grid">
+          <div class="grid__item one-whole">
+              <h2 class="section__heading">Contact</h2>
+          </div>
+
+          <div class="grid__item one-third portable--one-whole">
+              <h3>Direct</h3>
+              <p>
+              <a href="mailto:juliasmind@gmx.de">juliasmind@gmx.de</a>
+              </p>
+              <h3>Social Media</h3>
+              <ul class="list-style-none">
+                  <li>
+                      <a href="https://www.facebook.com/juliasmindband"><i class="fab fa-facebook-square"></i> Facebook</a></li>
+                      <li><a href="https://www.instagram.com/juliasmind"><i class="fab fa-instagram"></i> Instagram</a></li>
+              </ul>
+          </div>
+          <div class="grid__item two-thirds portable--one-whole">
+              <h3>Electronic-Press-Kit (EPK)</h3>
+              <p>Download our electronic press kit containing images, press copy and media files.</p>
+              <p><a href="https://www.dropbox.com/sh/zmtarm6qe6hct2w/AAAJj5nDcnaSwPZPMjuI87bka?dl=0">Download EPK</a></p>
+          </div>
+      </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="centered">
+      <a href="impressum.html">Impressum</a>
+      ·
+      <a href="datenschutz.html">Datenschutz</a>
+  </div>
+</footer>
+

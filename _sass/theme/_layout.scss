@@ -190,3 +190,25 @@ img {
         color: lighten($secondary-brand-color, 30%);
     }
 }
+
+.release-content {
+    em, p {
+        @extend .muted;
+    }
+
+    li > em {
+        padding: 0 0.25*$base-spacing-unit;
+    }
+
+    p {
+        @extend .indent;
+
+        em {
+            color: white;
+        }
+    }
+
+    ol {
+        @extend .landmark
+    }
+}
